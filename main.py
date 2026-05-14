@@ -1,20 +1,21 @@
+"""
+main.py — Entry point for Smart Surveillance System
+Run with:  python main.py
+"""
+
 import sys
+import os
 
-from src.surveillance import ensure_dirs, run_surveillance
-from src.config import CAMERA_INDEX
-from src.camera import open_camera
+# Ensure the project root is on the path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from app.ui.main_window import MainWindow
 
 
-def _cli_main():
-    ensure_dirs()
-    cap = open_camera(CAMERA_INDEX)
-    run_surveillance(cap, stop_event=None)
+def main():
+    app = MainWindow()
+    app.mainloop()
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "--cli":
-        _cli_main()
-    else:
-        from src.ui import main as ui_main
-
-        ui_main()
+    main()
