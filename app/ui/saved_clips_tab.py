@@ -1,3 +1,4 @@
+# Saved Clips Tab UI Module
 import tkinter as tk
 from tkinter import ttk, messagebox
 import cv2, os, threading, time

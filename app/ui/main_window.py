@@ -1,3 +1,4 @@
+# Main Window UI Module
 import tkinter as tk
 from tkinter import ttk
 from app.utils.config import *

@@ -1,3 +1,4 @@
+# Clip Recorder Module
 import os, cv2, json, threading
 import numpy as np
 from collections import deque

@@ -1,3 +1,4 @@
+# Object Detection Module
 import cv2
 import numpy as np
 from app.utils.config import CONFIDENCE_THRESHOLD, VEHICLE_LABELS, ANIMAL_LABELS, PERSON_LABELS

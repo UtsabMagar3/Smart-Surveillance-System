@@ -1,8 +1,3 @@
-"""
-main.py — Entry point for Smart Surveillance System
-Run with:  python main.py
-"""
-
 import sys
 import os
 

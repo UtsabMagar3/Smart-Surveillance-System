@@ -1,3 +1,4 @@
+# Live Camera Tab UI Module
 import tkinter as tk
 from tkinter import ttk, messagebox
 import cv2, threading, time

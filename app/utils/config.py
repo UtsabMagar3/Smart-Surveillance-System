@@ -1,3 +1,4 @@
+# Configuration Module
 import os
 
 BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -8,9 +9,9 @@ VEHICLE_LABELS = {"car","bus","truck","motorcycle","bicycle","airplane","boat","
 ANIMAL_LABELS  = {"cat","dog","bird","cow","horse","sheep","elephant","bear","zebra","giraffe"}
 PERSON_LABELS  = {"person"}
 
-CONFIDENCE_THRESHOLD = 0.35
-MIN_MOTION_AREA      = 2500
-DETECT_EVERY_N       = 3
+CONFIDENCE_THRESHOLD = 0.50
+MIN_MOTION_AREA      = 1500
+DETECT_EVERY_N       = 2
 
 CLIP_FPS         = 20
 CLIP_PRE_SECONDS = 3.0
